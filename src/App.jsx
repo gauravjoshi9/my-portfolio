@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Mail, ExternalLink, Send, ArrowRight, Code, Zap, Globe, Menu, X } from 'lucide-react';
 
 // Google Drive Photo URL
-import PROFILE_PHOTO from "./images/profile.png";
+import ABOUT_PHOTO from "./images/profile.png";
+const HERO_PHOTO = "/profile.png";
 export default function Portfolio() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
@@ -47,21 +48,21 @@ export default function Portfolio() {
       title: 'MCQ Generator System',
       description: 'Automated standardized 60-question MCQ paper generator using Python and openpyxl. Generates excel sheets for IT curriculum.',
       tech: ['Python', 'openpyxl', 'Excel'],
-      link: 'https://github.com/yourusername/mcq-generator',
+      link: 'https://github.com/gauravjoshi9/mcq-generator',
       icon: Code
     },
     {
       title: 'Java Pattern Programs',
       description: 'Comprehensive collection of nested loop pattern printing exercises with detailed documentation and learning resources.',
       tech: ['Java', 'Algorithms', 'DSA'],
-      link: 'https://github.com/yourusername/java-patterns',
+      link: 'https://github.com/gauravjoshi9/java-patterns',
       icon: Zap
     },
     {
       title: 'Educational Platform',
       description: 'Vocational training materials for cloud computing, virtualization, and networking. Interactive learning content.',
       tech: ['Content Design', 'IT Training', 'Curriculum'],
-      link: 'https://github.com/yourusername/education-platform',
+      link: 'https://github.com/gauravjoshi9/education-platform',
       icon: Globe
     }
   ];
@@ -110,7 +111,7 @@ export default function Portfolio() {
             
             {/* Social Icons in Header */}
             <div className="flex gap-3 ml-4 pl-4 border-l border-blue-500/30">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-400 transition duration-300 text-sm font-semibold">
+              <a href="https://github.com/gauravjoshi9" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-400 transition duration-300 text-sm font-semibold">
                 GitHub
               </a>
               <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-400 transition duration-300 text-sm font-semibold">
@@ -148,7 +149,7 @@ export default function Portfolio() {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-500 rounded-full blur-3xl opacity-75 group-hover:opacity-100 transition duration-500 animate-pulse-glow"></div>
               <img 
-                src={PROFILE_PHOTO}
+                src={HERO_PHOTO}
                 alt="Profile" 
                 className="relative w-48 h-48 rounded-full border-4 border-blue-400/50 shadow-2xl object-cover group-hover:scale-105 transition duration-500"
               />
@@ -212,7 +213,7 @@ export default function Portfolio() {
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition duration-500"></div>
                 <img 
-                  src={PROFILE_PHOTO}
+                  src={ABOUT_PHOTO}
                   alt="About Me" 
                   className="relative w-80 h-96 rounded-3xl object-cover border-2 border-blue-400/50 shadow-2xl group-hover:scale-105 transition duration-500"
                 />
